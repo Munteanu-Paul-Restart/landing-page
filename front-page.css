@@ -148,6 +148,7 @@ img {
 }
 
 .tab {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -274,4 +275,42 @@ img {
     .tabs, .content, .footer {
         font-size: .7em;
     }
+}
+
+/* NOUVEAU POUR L'EXERCICE JS */
+.selector {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    bottom: 0;
+    border-radius: 5px 5px 0 0;
+    backdrop-filter: invert();
+    transition: height 0.2s;
+}
+
+.tab:hover {
+    background-color: unset;
+}
+
+.glow {
+    filter: drop-shadow(0 0 10px rgb(0, 0, 255));
+}
+
+.logo {
+    transition: filter 0.2s;
+}
+
+.column.center {transition: filter 0.2s;}
+.column.center:hover {filter: drop-shadow(0 0 10px rgb(0, 0, 255, 0.5));}
+
+#wut {
+    display: none;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 1000px;
+    width: 40px;
+    height: 40px;
+    backdrop-filter: invert();
 }
